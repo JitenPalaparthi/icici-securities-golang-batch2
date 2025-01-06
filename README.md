@@ -47,3 +47,11 @@ go tool dist list
 ```bash
 GOOS=linux GOARCH=amd64 go build -o build/hello_linux_amd64 .
 ```
+
+### Go env 
+
+```bash
+GOOS
+GOARCH
+GOROOT
+```
