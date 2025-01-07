@@ -57,3 +57,10 @@ GOOS
 GOARCH
 GOROOT
 ```
+
+
+### Escape analysis
+
+```bash
+go build -gcflags="-m" main.go
+```
