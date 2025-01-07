@@ -7,8 +7,10 @@ https://docs.google.com/presentation/d/1WVvsbvgHKBrNrKtnT4XWRfrsfkNlbw5u6L9O1DeV
 
 ### keywords
 
-### builtin 
+const, func, import, package, var  (5 out of 25)
 
+### builtin 
+print, println ,complex, real, imag (5 out 18)
 
 ### go mod
 
