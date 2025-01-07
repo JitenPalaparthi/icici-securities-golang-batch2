@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	// for
@@ -57,10 +59,16 @@ out:
 		println(i)
 	}
 
-	i := 1
+	// i := 1
 
-	for ; ; i++ {
-		println(i)
+	// for ; ; i++ {
+	// 	println(i)
+	// }
+
+	fmt.Println()
+	a, b := 0, 1
+	for i := 1; i <= 10; i++ {
+		println(a)
+		a, b = b, a+b // easy and straightforward way to swap values
 	}
-
 }
