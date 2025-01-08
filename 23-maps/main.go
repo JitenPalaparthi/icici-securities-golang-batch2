@@ -58,3 +58,10 @@ func main() {
 // create a function, to delete a key from the map
 // if map is nil return error, saying nil map
 // if key does not exist return error with a message key does not exist
+
+// create a slice
+// add random numbers to the slice
+// create a map
+// findout duplicate numbers in the slice
+// using map
+// if duplicate number is found, add it to the map
