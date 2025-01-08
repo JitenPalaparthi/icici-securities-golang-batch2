@@ -12,7 +12,34 @@ func main() {
 	slice := arr[:]
 	SumOf(slice...)
 	SumOf(arr[:]...)
+
+	i := 0
+loop: //label
+	//println(i)
+	i++
+	if i > 10 {
+		goto exit
+	}
+	if i%2 == 0 {
+		goto even
+	} else {
+		goto odd
+	}
+
+even:
+	println("Even:", i)
+	if i <= 10 {
+		goto loop
+	}
+odd:
+	println("Odd:", i)
+	if i <= 10 {
+		goto loop
+	}
+exit:
+	println("finished")
 }
+
 func SumOf(nums ...int) int {
 	sum := 0
 	for _, v := range nums {
