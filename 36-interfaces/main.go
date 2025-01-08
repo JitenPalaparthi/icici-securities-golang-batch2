@@ -28,6 +28,14 @@ func main() {
 
 	r := rand.IntN(9)
 	CallShape(shapes[r]) // dynamic dispatch --> runtime poly
+
+	var ishape1 shape.IShape = r1
+	switch ishape1.(type) {
+	case *rect.Rect:
+		r4 := ishape1.(*rect.Rect)
+		fmt.Println(r4)
+	}
+
 }
 
 // any interface
