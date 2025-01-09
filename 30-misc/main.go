@@ -13,6 +13,8 @@ func main() {
 	SumOf(slice...)
 	SumOf(arr[:]...)
 
+	c := 100*200/1 + 23 + n5 + uint16(n4)
+
 	i := 0
 loop: //label
 	//println(i)

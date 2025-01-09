@@ -71,7 +71,6 @@ loop:
 	r6 := struct1.addfn(struct1.a, struct1.b)
 	fmt.Println(r6)
 	fmt.Println(struct1.empty)
-
 }
 
 func calc(a, b int, fn func(int, int) int) int {

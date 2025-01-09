@@ -7,10 +7,10 @@ https://docs.google.com/presentation/d/1WVvsbvgHKBrNrKtnT4XWRfrsfkNlbw5u6L9O1DeV
 
 ### keywords
 
-break,case ,const,continue,default,else,fallthrough, for, func,goto, if, import, map,package,range,return,struct, switch,type, var (20 out of 25)
+break,case,const,continue,default,defer,else,fallthrough, for, func,goto, if, import,interface,map,package,range,return,struct, switch,type, var (22 out of 25)
 
 ### builtin 
-append, cap, copy, len, delete, clear, new, make, max,min, print, println,complex, real, imag (15 out 18)
+append, cap, copy, len, delete, clear, new, make, max,min, panic,print, println,complex, real,recover, imag (17 out 18)
 
 ### go mod
 
@@ -64,3 +64,5 @@ GOROOT
 ```bash
 go build -gcflags="-m" main.go
 ```
+
+### panic,defer,recover

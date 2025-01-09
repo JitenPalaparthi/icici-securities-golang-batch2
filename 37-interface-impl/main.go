@@ -38,7 +38,7 @@ func (fw *FileOps) Write(p []byte) (n int, err error) {
 	if err != nil {
 		return 0, err
 	}
-	defer f.Close()
+	defer f.Close() // not to deallocate, it is to tell the os to close gracefully
 	return f.Write(p)
 }
 
