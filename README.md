@@ -7,7 +7,7 @@ https://docs.google.com/presentation/d/1WVvsbvgHKBrNrKtnT4XWRfrsfkNlbw5u6L9O1DeV
 
 ### keywords
 
-break,case,chan,const,continue,default,defer,else,fallthrough, for, func,go,goto, if, import,interface,map,package,range,return,struct, switch,type, var (24 out of 25)
+break,case,chan,const,continue,default,defer,else,fallthrough, for, func,go,goto, if, import,interface,map,package,range,return,select,struct, switch,type, var (25 out of 25)
 
 ### builtin 
 
