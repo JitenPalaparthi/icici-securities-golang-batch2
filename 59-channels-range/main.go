@@ -2,23 +2,28 @@ package main
 
 import (
 	"runtime"
-	"time"
 )
 
 func main() {
-	ch := make(chan int)
-	sig := make(chan struct{})
-	go GenereateSq(ch)
-	//go Receiver(ch, sig)
-	go receiverR(ch, sig)
+	ch1 := make(chan int)
+	ch2 := make(chan int)
+	sig1 := make(chan struct{})
+	sig2 := make(chan struct{})
 
-	<-sig // just a signal to be triggred
+	go GenereateSq(ch1)
+	go GenereateSq(ch2)
+	//go Receiver(ch, sig)
+	go receiverR(ch1, sig1)
+	go receiverR(ch2, sig2)
+
+	<-sig1 // just a signal to be triggred
+	<-sig2
 }
 
 func GenereateSq(ch chan<- int) { // sender channel
 	for i := 1; i <= 10; i++ {
 		ch <- i * i
-		time.Sleep(time.Millisecond * 500)
+		//time.Sleep(time.Millisecond * 500)
 	}
 	close(ch) // only a sender can close a channel
 }

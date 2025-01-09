@@ -7,10 +7,11 @@ https://docs.google.com/presentation/d/1WVvsbvgHKBrNrKtnT4XWRfrsfkNlbw5u6L9O1DeV
 
 ### keywords
 
-break,case,const,continue,default,defer,else,fallthrough, for, func,go,goto, if, import,interface,map,package,range,return,struct, switch,type, var (23 out of 25)
+break,case,chan,const,continue,default,defer,else,fallthrough, for, func,go,goto, if, import,interface,map,package,range,return,struct, switch,type, var (24 out of 25)
 
 ### builtin 
-append, cap, copy, len, delete, clear, new, make, max,min, panic,print, println,complex, real,recover, imag (17 out 18)
+
+append, cap,clear, close,complex,copy, delete, imag,len,, make, max,min, new,panic,print, println,, real,recover,  (18 out 18)
 
 ### go mod
 
