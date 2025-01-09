@@ -63,12 +63,11 @@ func main() {
 		case fnType:
 			r := v.(fnType)(a, b)
 			fmt.Println("Functype:", r)
+			fmt.Println(v.(fnType).Sq(100))
 		default:
 			println("not a defined type")
 		}
-
 	}
-
 }
 
 func mul(a, b int) int {
