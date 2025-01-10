@@ -59,11 +59,8 @@ func main() {
 		utils.ChUser <- user // blocked ?
 		//ctx.JSON(201, gin.H{"user-id": user.Id})
 		ctx.JSON(201, user)
-
 	})
-
 	router.Run(":" + PORT)
-
 }
 
 // func Runall(str ...string) error {
