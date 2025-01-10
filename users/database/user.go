@@ -1,5 +1,6 @@
 package database
 
+//go:generate mockgen -source=user.go -destination=mocks/mocks_user.go -package=mocks
 import (
 	"demo/models"
 	"errors"

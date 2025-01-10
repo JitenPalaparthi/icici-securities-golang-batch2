@@ -92,3 +92,9 @@ func area2(s float32) float32 {
 // data abstraction -->
 
 // fast compilation
+
+// goc // asm //linker
+
+// .o
+// .so
+// .a

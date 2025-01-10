@@ -26,7 +26,7 @@ try:
 	count++
 	if err != nil {
 		log.Println(err.Error())
-		log.Println("Retrying to connect to database..." + string(count))
+		log.Println("Retrying to connect to database...", count)
 		time.Sleep(RETRY_DURATION)
 		if count < RETRY_TIMES {
 			goto try
@@ -42,7 +42,7 @@ try:
 	count++
 	if err != nil {
 		log.Println(err.Error())
-		log.Println("Retrying to connect to database..." + string(count))
+		log.Println("Retrying to connect to database...", count)
 		time.Sleep(RETRY_DURATION)
 		if count < RETRY_TIMES {
 			goto try

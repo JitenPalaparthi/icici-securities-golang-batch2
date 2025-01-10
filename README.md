@@ -67,3 +67,19 @@ go build -gcflags="-m" main.go
 ```
 
 ### panic,defer,recover
+
+
+```bash
+go tool compile -o output.o main.go
+```
+
+```bash
+go tool link -o demo output.o
+```
+
+
+### How to link C 
+
+1. Should have c code 
+2. compile gcc or clang
+3. 
